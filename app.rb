@@ -10,7 +10,7 @@ class App < Sinatra::Base
   # @square = params[:number].to_i ** 2
   # @square.to_i
    @num = params[:number].to_i ** 2
-   @num.to_i
+   @num.to_s
 end
 
 end
