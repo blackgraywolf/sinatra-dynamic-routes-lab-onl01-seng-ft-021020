@@ -21,5 +21,15 @@ end
     str
  end
 
+ get '/say/:word1/:word2/:word3/:word4/:word5' do
+    @word1 = params[:word1]
+    @word2 = params[:word2]
+    @word3 = params[:word3]
+    @word4 = params[:word4]
+    @word5 = params[:word5]
+  str =  "#{@word1} #{@word2} #{@word3} #{@word4} #{@word5}."
+    str
+    binding pry
+  end
 
 end
