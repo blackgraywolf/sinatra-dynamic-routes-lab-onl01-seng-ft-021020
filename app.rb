@@ -22,6 +22,7 @@ end
  end
 
  get '/say/:word1/:word2/:word3/:word4/:word5' do
+   str = ""
     @word1 = params[:word1]
     @word2 = params[:word2]
     @word3 = params[:word3]
