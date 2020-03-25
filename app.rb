@@ -4,11 +4,12 @@ class App < Sinatra::Base
  get '/reversename/:name' do
     @reverse_name = params[:name].reverse
     @reverse_name
+    binding pry
   end
 
  get '/square/:number' do 
    @square = params[:number].to_i ** 2
    @square.to_s
-   binding pry
+   
 end
 end
